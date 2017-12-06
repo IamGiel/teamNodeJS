@@ -1,0 +1,24 @@
+
+================== Player: 1 ====================
+Name: Alpha
+Position: f
+Offense pts: 2
+Defense pts: 4
+
+================== Player: 2 ====================
+Name: Beta
+Position: t
+Offense pts: 5
+Defense pts: 1
+
+================== Player: 3 ====================
+Name: Charlie
+Position: 3
+Offense pts: 2
+Defense pts: 2
+
+================== Player: 4 ====================
+Name: Delta
+Position: E
+Offense pts: 5
+Defense pts: 0
