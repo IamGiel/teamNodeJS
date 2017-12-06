@@ -1,48 +1,57 @@
 
 ================== Player: 1 ====================
+Name: Angelo
+
+Position: D
+Offense pts: 21
+Defense pts: 23
+starter
+================== Player: 2 ====================
 Name: Alpha
-Position: f
-Offense pts: 2
-Defense pts: 4
 
-================== Player: 2 ====================
-Name: Beta
-Position: t
-Offense pts: 5
-Defense pts: 1
-
+Position: D
+Offense pts: 21
+Defense pts: 23
+starter
 ================== Player: 3 ====================
-Name: Charlie
-Position: 3
-Offense pts: 2
-Defense pts: 2
+Name: Andrei
 
+Position: 32
+Offense pts: 21
+Defense pts: 43
+starter
 ================== Player: 4 ====================
-Name: Delta
-Position: E
-Offense pts: 5
-Defense pts: 0
+Name: dkasd
 
-================== Player: 1 ====================
-Name: Ghandi
-Position: Pr
-Offense pts: 34
+Position: asd
+Offense pts: w
+Defense pts: asd
+starter
+================== Player: 5 ====================
+Name: And
+
+Position: LK
+Offense pts: 21
+Defense pts: 13
+starter
+================== Player: 6 ====================
+Name: An
+
+Position: 23
+Offense pts: 14
+Defense pts: 43
+starter
+================== Player: 7 ====================
+Name: Mike
+
+Position: 12
+Offense pts: 32
+Defense pts: 3
+sub
+================== Player: 8 ====================
+Name: Polw
+
+Position: 12
+Offense pts: as
 Defense pts: 12
-
-================== Player: 2 ====================
-Name: Amhed
-Position: Sr
-Offense pts: 24
-Defense pts: 25
-
-================== Player: 3 ====================
-Name: Pei
-Position: Guard
-Offense pts: 33
-Defense pts: 12
-
-================== Player: 4 ====================
-Name: Polly
-Position: Right
-Offense pts: 25
-Defense pts: 21
+sub

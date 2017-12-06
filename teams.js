@@ -38,15 +38,15 @@ var Player = function(Name, Position, Offense, Defense) {
   //here inquire.prompt
   var count = 0;
   var profiler = function() {
-      if (count < 4) {//number of players
+      if (count < 8) {//number of players
         inquirer.prompt([
             {
              name: "Name",
-             message: "Whats the player name?: "
+             message: "Whats the player name? "
             }, 
             {
              name: "Position",
-             message: "Whats the player position?: "
+             message: "Whats the player position? "
             },
             {
              name: "Offense",
@@ -56,27 +56,40 @@ var Player = function(Name, Position, Offense, Defense) {
              name: "Defense",
              message: "Whats the players defensive points"
             }
-
-
           ]).then(function(answer) {
             var newPlayer = new Player(answer.Name, answer.Position, answer.Offense, answer.Defense);
-            console.log(answer.Name);
+            var starters = [];
+            var subs = [];
             //work-around - list players numerically
             var list = count;
-            var playerList = list + 1;
-            var loggedInfo =  "\n================== Player: " + playerList + " ====================" + 
+            var nthPlayers = list + 1;
+            var loggedInfo =  "\n================== Player: " + nthPlayers + " ====================" + 
               "\nName: " + answer.Name + "\n" + 
-              "Position: " + answer.Position + "\n" +
-              "Offense pts: " + answer.Offense + "\n" +
-              "Defense pts: " + answer.Defense + "\n";
-              //here store info in log.txt
+              "\nPosition: " + answer.Position + 
+              "\nOffense pts: " + answer.Offense +
+              "\nDefense pts: " + answer.Defense;
+              // here store info in log.txt
             fs.appendFile("log.txt", loggedInfo, function (err) {
-              if (err) throw err;
-              console.log('Saved!');
-              profiler();
-            }); 
+              if (err) throw err; 
               count++;//keep asking until max players reached
-              
+              profiler(); 
+            }); 
+              if (count < 6){
+                starters.push(newPlayer);
+                console.log("Starter: " + starters.toString());
+                fs.appendFile("log.txt", "\nstarter", function (err) {
+                  if (err) throw err;
+                  console.log('Saved!');
+                }); 
+              }
+              else if (count >= 6 ) {
+                subs.push(newPlayer)
+                console.log("Sub: " + subs.toString());
+                fs.appendFile("log.txt", "\nsub", function (err) {
+                  if (err) throw err;
+                  console.log('Saved!');
+                });
+              }
           });
     }
     else {
