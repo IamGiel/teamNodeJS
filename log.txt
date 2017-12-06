@@ -1,121 +1,101 @@
 
 
 
-SCORE A: 10
-SCORE B: 8
+SCORE A: 20
+SCORE B: 4
+
+ROUND OF PLAY # 1
+=======================
 
 
-SCORE A: 21
-SCORE B: 17
+SCORE A: 1
+SCORE B: 10
 
-
-SCORE A: 16
-SCORE B: 20
-
-
-SCORE A: 21
-SCORE B: 11
-
-
-SCORE A: 13
-SCORE B: 19
-
-
-SCORE A: 21
-SCORE B: 1
-
-
-SCORE A: 21
-SCORE B: 7
-
-
-SCORE A: 7
-SCORE B: 6
+ROUND OF PLAY # 2
+=======================
 
 
 SCORE A: 6
-SCORE B: 17
-
-
-SCORE A: 16
-SCORE B: 7
-
-
-SCORE A: 19
-SCORE B: 1
-
-
-SCORE A: 10
-SCORE B: 15
-
-
-SCORE A: 10
 SCORE B: 21
 
+ROUND OF PLAY # 3
+=======================
 
-SCORE A: 6
+
+SCORE A: 10
+SCORE B: 14
+
+ROUND OF PLAY # 4
+=======================
+
+
+SCORE A: 16
 SCORE B: 16
 
-
-SCORE A: 9
-SCORE B: 17
-
-
-SCORE A: 6
-SCORE B: 10
+ROUND OF PLAY # 5
+=======================
 
 
-SCORE A: 9
-SCORE B: 4
-
-
-SCORE A: 8
-SCORE B: 19
-
-
-SCORE A: 18
-SCORE B: 3
-
-
-SCORE A: 9
-SCORE B: 7
-
-
-SCORE A: 8
-SCORE B: 10
-
-
-SCORE A: 3
-SCORE B: 17
-
-
-SCORE A: 4
-SCORE B: 9
-
-
-SCORE A: 5
-SCORE B: 4
-
-
-SCORE A: 2
-SCORE B: 13
-
-
-SCORE A: 4
+SCORE A: 14
 SCORE B: 2
 
 
-SCORE A: 16
-SCORE B: 19
-
-
-SCORE A: 6
-SCORE B: 10
-
-
-SCORE A: 5
-SCORE B: 14
-
-
-SCORE A: 16
-SCORE B: 12
+================== Player: 1 ====================
+Name: Alpha
+Position: Forward
+Offense pts: 8/10
+Defense pts: 6/10
+starter
+================== Player: 2 ====================
+Name: Giel
+Position: Center
+Offense pts: 4/10
+Defense pts: 9/10
+starter
+================== Player: 1 ====================
+Name: Anjie
+Position: F
+Offense pts: 12
+Defense pts: 12
+starter
+================== Player: 2 ====================
+Name: Jon
+Position: D
+Offense pts: 32
+Defense pts: 12
+starter
+================== Player: 3 ====================
+Name: Mik
+Position: K
+Offense pts: 11
+Defense pts: 23
+starter
+================== Player: 4 ====================
+Name: Max
+Position: E
+Offense pts: 34
+Defense pts: 21
+starter
+================== Player: 5 ====================
+Name: Jin
+Position: X
+Offense pts: 43
+Defense pts: 12
+starter
+================== Player: 6 ====================
+Name: Mon
+Position: C
+Offense pts: 22
+Defense pts: 12
+sub
+================== Player: 7 ====================
+Name: Kilo
+Position: D
+Offense pts: 44
+Defense pts: 32
+sub
+================== Player: 8 ====================
+Name: Pon
+Position: S
+Offense pts: 12
+Defense pts: 32

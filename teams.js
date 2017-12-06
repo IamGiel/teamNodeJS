@@ -78,7 +78,7 @@ var Player = function(Name, Position, Offense, Defense) {
 
               if (count < 6){
                 starters.push(newPlayer);
-                console.log("Starter: " + starters);
+                console.log("Starter: ");
                 fs.appendFile("log.txt", "\nstarter", function (err) {
                   if (err) throw err;
                   // console.log('Saved!');
@@ -86,7 +86,7 @@ var Player = function(Name, Position, Offense, Defense) {
               }
               else if (count >= 6 && count < 8) {
                 subs.push(newPlayer)
-                console.log("Sub: " + subs);
+                console.log("Sub: ");
                 fs.appendFile("log.txt", "\nsub", function (err) {
                   if (err) throw err;
                   // console.log('Saved!');
@@ -102,18 +102,7 @@ var Player = function(Name, Position, Offense, Defense) {
       else {
           console.log("Profile complete...");
       }
-  } 
-  //randomizer for scores to compare to player stats offense/defense
-  var randomScores = function() {
-    var scoreA = Math.floor(Math.random() * (21) + 1);
-    console.log(scoreA);
-    var scoreB = Math.floor(Math.random() * (21) + 1);
-    console.log(scoreB);
-      fs.appendFile("log.txt", "\n\n\nSCORE A: " + scoreA + "\n" + "SCORE B: " + scoreB, function (err) {
-        if (err) throw err;
-        // console.log('Saved!');
-      });
-  };
+  }
 
   //play game function
   var numOfGames = 0;
@@ -125,12 +114,27 @@ var Player = function(Name, Position, Offense, Defense) {
       
       numOfGames++; 
       console.log("ROUND OF PLAY # " + numOfGames);
+      fs.appendFile("log.txt", "ROUND OF PLAY # " + numOfGames+"\n=======================", function (err) {
+        if (err) throw err;
+        // console.log('Saved!');
+      });
       playGame();  
     } 
     else { 
     console.log("Game complete..."); 
     }
   }
+  //randomizer for scores to compare to player stats offense/defense
+  var randomScores = function() {
+    var scoreA = Math.floor(Math.random() * (21) + 1);
+    console.log(scoreA);
+    var scoreB = Math.floor(Math.random() * (21) + 1);
+    console.log(scoreB);
+      fs.appendFile("log.txt", "\n\n\nSCORE A: " + scoreA + "\n" + "SCORE B: " + scoreB + "\n\n", function (err) {
+        if (err) throw err;
+        // console.log('Saved!');
+      });
+  };
   //intiate the playGAme
   var startGame = process.argv[2];
   switch(startGame) {
