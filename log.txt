@@ -22,3 +22,27 @@ Name: Delta
 Position: E
 Offense pts: 5
 Defense pts: 0
+
+================== Player: 1 ====================
+Name: Ghandi
+Position: Pr
+Offense pts: 34
+Defense pts: 12
+
+================== Player: 2 ====================
+Name: Amhed
+Position: Sr
+Offense pts: 24
+Defense pts: 25
+
+================== Player: 3 ====================
+Name: Pei
+Position: Guard
+Offense pts: 33
+Defense pts: 12
+
+================== Player: 4 ====================
+Name: Polly
+Position: Right
+Offense pts: 25
+Defense pts: 21
