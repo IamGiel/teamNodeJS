@@ -1,57 +1,121 @@
 
-================== Player: 1 ====================
-Name: Angelo
 
-Position: D
-Offense pts: 21
-Defense pts: 23
-starter
-================== Player: 2 ====================
-Name: Alpha
 
-Position: D
-Offense pts: 21
-Defense pts: 23
-starter
-================== Player: 3 ====================
-Name: Andrei
+SCORE A: 10
+SCORE B: 8
 
-Position: 32
-Offense pts: 21
-Defense pts: 43
-starter
-================== Player: 4 ====================
-Name: dkasd
 
-Position: asd
-Offense pts: w
-Defense pts: asd
-starter
-================== Player: 5 ====================
-Name: And
+SCORE A: 21
+SCORE B: 17
 
-Position: LK
-Offense pts: 21
-Defense pts: 13
-starter
-================== Player: 6 ====================
-Name: An
 
-Position: 23
-Offense pts: 14
-Defense pts: 43
-starter
-================== Player: 7 ====================
-Name: Mike
+SCORE A: 16
+SCORE B: 20
 
-Position: 12
-Offense pts: 32
-Defense pts: 3
-sub
-================== Player: 8 ====================
-Name: Polw
 
-Position: 12
-Offense pts: as
-Defense pts: 12
-sub
+SCORE A: 21
+SCORE B: 11
+
+
+SCORE A: 13
+SCORE B: 19
+
+
+SCORE A: 21
+SCORE B: 1
+
+
+SCORE A: 21
+SCORE B: 7
+
+
+SCORE A: 7
+SCORE B: 6
+
+
+SCORE A: 6
+SCORE B: 17
+
+
+SCORE A: 16
+SCORE B: 7
+
+
+SCORE A: 19
+SCORE B: 1
+
+
+SCORE A: 10
+SCORE B: 15
+
+
+SCORE A: 10
+SCORE B: 21
+
+
+SCORE A: 6
+SCORE B: 16
+
+
+SCORE A: 9
+SCORE B: 17
+
+
+SCORE A: 6
+SCORE B: 10
+
+
+SCORE A: 9
+SCORE B: 4
+
+
+SCORE A: 8
+SCORE B: 19
+
+
+SCORE A: 18
+SCORE B: 3
+
+
+SCORE A: 9
+SCORE B: 7
+
+
+SCORE A: 8
+SCORE B: 10
+
+
+SCORE A: 3
+SCORE B: 17
+
+
+SCORE A: 4
+SCORE B: 9
+
+
+SCORE A: 5
+SCORE B: 4
+
+
+SCORE A: 2
+SCORE B: 13
+
+
+SCORE A: 4
+SCORE B: 2
+
+
+SCORE A: 16
+SCORE B: 19
+
+
+SCORE A: 6
+SCORE B: 10
+
+
+SCORE A: 5
+SCORE B: 14
+
+
+SCORE A: 16
+SCORE B: 12

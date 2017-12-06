@@ -64,38 +64,107 @@ var Player = function(Name, Position, Offense, Defense) {
             var list = count;
             var nthPlayers = list + 1;
             var loggedInfo =  "\n================== Player: " + nthPlayers + " ====================" + 
-              "\nName: " + answer.Name + "\n" + 
+              "\nName: " + answer.Name + 
               "\nPosition: " + answer.Position + 
               "\nOffense pts: " + answer.Offense +
               "\nDefense pts: " + answer.Defense;
               // here store info in log.txt
             fs.appendFile("log.txt", loggedInfo, function (err) {
               if (err) throw err; 
-              count++;//keep asking until max players reached
-              profiler(); 
             }); 
+
+            count++;//keep asking until max players reached
+            
+
               if (count < 6){
                 starters.push(newPlayer);
-                console.log("Starter: " + starters.toString());
+                console.log("Starter: " + starters);
                 fs.appendFile("log.txt", "\nstarter", function (err) {
                   if (err) throw err;
-                  console.log('Saved!');
+                  // console.log('Saved!');
                 }); 
               }
-              else if (count >= 6 ) {
+              else if (count >= 6 && count < 8) {
                 subs.push(newPlayer)
-                console.log("Sub: " + subs.toString());
+                console.log("Sub: " + subs);
                 fs.appendFile("log.txt", "\nsub", function (err) {
                   if (err) throw err;
-                  console.log('Saved!');
+                  // console.log('Saved!');
                 });
               }
+              else if(count === 8) {
+                  console.log("\n\n=======INSTRUCTION:  TYPE: 'Lets Play' TO START GAME =========\n\n");
+                
+              }
+              profiler();
           });
     }
-    else {
-        console.log("Profile complete...");
-    }
+      else {
+          console.log("Profile complete...");
+      }
   } 
-  profiler();
+  //randomizer for scores to compare to player stats offense/defense
+  var randomScores = function() {
+    var scoreA = Math.floor(Math.random() * (21) + 1);
+    console.log(scoreA);
+    var scoreB = Math.floor(Math.random() * (21) + 1);
+    console.log(scoreB);
+      fs.appendFile("log.txt", "\n\n\nSCORE A: " + scoreA + "\n" + "SCORE B: " + scoreB, function (err) {
+        if (err) throw err;
+        // console.log('Saved!');
+      });
+  };
+
+  //play game function
+  var numOfGames = 0;
+  var teamScore = 0;
+  var playGame = function(){
+    // console.log("Heres the generated scores: \n" + teamScore);
+    randomScores();  
+    if (numOfGames < 5) {
+      
+      numOfGames++; 
+      console.log("ROUND OF PLAY # " + numOfGames);
+      playGame();  
+    } 
+    else { 
+    console.log("Game complete..."); 
+    }
+  }
+  //intiate the playGAme
+  var startGame = process.argv[2];
+  switch(startGame) {
+    case "Lets Play": playGame(); break;
+    case "List Players": profiler(); break;
+    default : console.log("\n\n=======~~~~~~~======== INSTRUCTION:  ========~~~~~~========= \n\n" + 
+                              "\n1. LIST YOUR 8 PLAYERS - HERES HOW:" +   
+                              "\n   - TYPE: node teams.js 'List Players'" +
+                              "\n   - Populate the data"  + "\n\n" +   
+                              "\n        THEN: \n" +
+                              "\n2. START GAME: " +  
+                              "\n - TYPE: node teams.js 'Lets Play'"  + "\n\n" +
+                              "\n - DONT FORGET QUOTATIONS!!! \n\n");
+
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
