@@ -16,6 +16,7 @@ var Player = function(Name, Position, Offense, Defense) {
   }
    this.goodGame = function() {
     var randomize = Math.floor(Math.random() * (1)) + 0;
+    console.log(randomize);
     if (randomize === 0) {
       console.log("goodGame");
       Offense++;
@@ -26,10 +27,11 @@ var Player = function(Name, Position, Offense, Defense) {
     }
    this.badGame = function() {
     var randomize = Math.floor(Math.random() * (1)) + 0;
-    if (randomize === 0) {
+    console.log(randomize);
+    if (randomize === 1) {
       console.log("not so good");
       Offense--;
-    } else if (randomize === 0) {
+    } else if (randomize === 1) {
             console.log("not so good");
             Defense--;
       }
@@ -37,6 +39,10 @@ var Player = function(Name, Position, Offense, Defense) {
 };   
   //here inquire.prompt
   var count = 0;
+  var offense = [];
+  var defense = [];
+  var totalOffense;
+  var totalDefense;
   var profiler = function() {
       if (count < 8) {//number of players
         inquirer.prompt([
@@ -72,19 +78,26 @@ var Player = function(Name, Position, Offense, Defense) {
             fs.appendFile("log.txt", loggedInfo, function (err) {
               if (err) throw err; 
             }); 
-
             count++;//keep asking until max players reached
-            
 
               if (count < 6){
+                //push offense stat to offense array and total it
+                offense.push(parseInt(answer.Offense));
+                totalOffense = offense.reduce((a, b) => a + b, 0); 
+                //push defense stat to defense array and total it
+                defense.push(parseInt(answer.Defense));
+                totalDefense = defense.reduce((a, b) => a + b, 0); 
+                //push player info to starters array
                 starters.push(newPlayer);
                 console.log("Starter: ");
-                fs.appendFile("log.txt", "\nstarter", function (err) {
+                //write to log.txt
+                fs.appendFile("log.txt", "\nStarter\n\n===== STATS: ===== \nStarters Total Offensive Points: " + totalOffense + "\n" + "Starters Total Defensive Points: " + totalDefense + "\n", function (err) {
                   if (err) throw err;
                   // console.log('Saved!');
                 }); 
               }
-              else if (count >= 6 && count < 8) {
+              else if (count >= 6 && count <= 8) {
+                //push player info to subs array
                 subs.push(newPlayer)
                 console.log("Sub: ");
                 fs.appendFile("log.txt", "\nsub", function (err) {
@@ -92,52 +105,72 @@ var Player = function(Name, Position, Offense, Defense) {
                   // console.log('Saved!');
                 });
               }
-              else if(count === 8) {
-                  console.log("\n\n=======INSTRUCTION:  TYPE: 'Lets Play' TO START GAME =========\n\n");
-                
-              }
               profiler();
           });
-    }
+      }
       else {
-          console.log("Profile complete...");
+        //total sum of offense stats
+        console.log("Starters Total Offense: " + totalOffense);
+        console.log("Starters Total Defense: " + totalDefense);
+        console.log("Profile complete...\n Check LOG.TXT");
       }
   }
 
-  //play game function
-  var numOfGames = 0;
-  var teamScore = 0;
-  var playGame = function(){
-    // console.log("Heres the generated scores: \n" + teamScore);
-    randomScores();  
-    if (numOfGames < 5) {
-      
-      numOfGames++; 
-      console.log("ROUND OF PLAY # " + numOfGames);
-      fs.appendFile("log.txt", "ROUND OF PLAY # " + numOfGames+"\n=======================", function (err) {
-        if (err) throw err;
-        // console.log('Saved!');
-      });
-      playGame();  
-    } 
-    else { 
-    console.log("Game complete..."); 
+  //scoring function
+  var gameScore = function(){
+    console.log("GAME SCORE CALLED!!!");
+    console.log("OFFENSE CALLED: " + totalOffense);
+    if (scoreA < totalOffense) {
+      teamScore++;
+      console.log(teamScore);
+    }
+    if (scoreB > totalDefense){
+      teamScore--;
+      console.log(teamScore);
     }
   }
-  //randomizer for scores to compare to player stats offense/defense
-  var randomScores = function() {
-    var scoreA = Math.floor(Math.random() * (21) + 1);
-    console.log(scoreA);
-    var scoreB = Math.floor(Math.random() * (21) + 1);
-    console.log(scoreB);
-      fs.appendFile("log.txt", "\n\n\nSCORE A: " + scoreA + "\n" + "SCORE B: " + scoreB + "\n\n", function (err) {
+
+  //play game function
+  var teamScore = 0;
+  var numOfGames = 0;
+  a_scoreArr = [];
+  b_scoreArr = [];
+
+  var playGame = function(){
+    // console.log("Heres the generated scores: \n" + teamScore);
+    if (numOfGames < 5) {
+      var listNum = numOfGames + 1;
+      var scoreA = Math.floor(Math.random() * (21) + 1);
+      var scoreB = Math.floor(Math.random() * (21) + 1);
+      // console.log("this is score: " + scoreA);
+      // console.log("this is score: " + scoreB);
+      a_scoreArr.push(scoreA);
+      b_scoreArr.push(scoreB);
+      fs.appendFile("log.txt", "\n===============" + "GAME "+ listNum + " COMMENCED" + "=================\nSCORE A: " + scoreA + "\n" + "SCORE B: " + scoreB + "\n", function (err) {
         if (err) throw err;
         // console.log('Saved!');
       });
-  };
-  //intiate the playGAme
-  var startGame = process.argv[2];
-  switch(startGame) {
+      
+      //increment numOfGame
+      numOfGames++; 
+      playGame();
+    } 
+    else {
+    console.log("\nGame complete!");
+    gameScore(); 
+    //print this to log.txt
+      fs.appendFile("log.txt", "\nGame complete! SCORES IN 5 ROUNDS...\n" + 
+                    "\nSCORE A: " + a_scoreArr +  
+                    "\nSCORE B: "  + b_scoreArr + 
+                    "\n========== END ===========\n\n\n", function (err) {
+                    if (err) throw err;
+      });
+    }
+  }
+
+  //START LIRI
+  var startApp = process.argv[2];
+  switch(startApp) {
     case "Lets Play": playGame(); break;
     case "List Players": profiler(); break;
     default : console.log("\n\n=======~~~~~~~======== INSTRUCTION:  ========~~~~~~========= \n\n" + 
@@ -146,8 +179,8 @@ var Player = function(Name, Position, Offense, Defense) {
                               "\n   - Populate the data"  + "\n\n" +   
                               "\n        THEN: \n" +
                               "\n2. START GAME: " +  
-                              "\n - TYPE: node teams.js 'Lets Play'"  + "\n\n" +
-                              "\n - DONT FORGET QUOTATIONS!!! \n\n");
+                              "\n   - TYPE: node teams.js 'Lets Play'"  + "\n\n" +
+                              "\n   - DONT FORGET QUOTATIONS!!! \n\n");
 
     };
 

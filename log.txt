@@ -1,101 +1,415 @@
 
-
-
-SCORE A: 20
-SCORE B: 4
-
-ROUND OF PLAY # 1
-=======================
-
-
-SCORE A: 1
-SCORE B: 10
-
-ROUND OF PLAY # 2
-=======================
-
-
-SCORE A: 6
-SCORE B: 21
-
-ROUND OF PLAY # 3
-=======================
-
-
-SCORE A: 10
-SCORE B: 14
-
-ROUND OF PLAY # 4
-=======================
-
-
-SCORE A: 16
-SCORE B: 16
-
-ROUND OF PLAY # 5
-=======================
-
-
-SCORE A: 14
-SCORE B: 2
-
-
 ================== Player: 1 ====================
-Name: Alpha
-Position: Forward
-Offense pts: 8/10
-Defense pts: 6/10
-starter
+Name: 1
+Position: 1
+Offense pts: 1
+Defense pts: 1
+Starter
+
+===== STATS: ===== 
+Starters Total Offensive Points: 1
+Starters Total Defensive Points: 1
+
 ================== Player: 2 ====================
-Name: Giel
-Position: Center
-Offense pts: 4/10
-Defense pts: 9/10
-starter
-================== Player: 1 ====================
-Name: Anjie
-Position: F
-Offense pts: 12
-Defense pts: 12
-starter
-================== Player: 2 ====================
-Name: Jon
-Position: D
-Offense pts: 32
-Defense pts: 12
-starter
+Name: 1
+Position: 1
+Offense pts: 1
+Defense pts: 1
+Starter
+
+===== STATS: ===== 
+Starters Total Offensive Points: 2
+Starters Total Defensive Points: 2
+
 ================== Player: 3 ====================
-Name: Mik
-Position: K
-Offense pts: 11
-Defense pts: 23
-starter
+Name: 1
+Position: 1
+Offense pts: 1
+Defense pts: 1
+Starter
+
+===== STATS: ===== 
+Starters Total Offensive Points: 3
+Starters Total Defensive Points: 3
+
 ================== Player: 4 ====================
-Name: Max
-Position: E
-Offense pts: 34
-Defense pts: 21
-starter
+Name: 1
+Position: 1
+Offense pts: 1
+Defense pts: 1
+Starter
+
+===== STATS: ===== 
+Starters Total Offensive Points: 4
+Starters Total Defensive Points: 4
+
 ================== Player: 5 ====================
-Name: Jin
-Position: X
-Offense pts: 43
-Defense pts: 12
-starter
+Name: 1
+Position: 1
+Offense pts: 1
+Defense pts: 1
+Starter
+
+===== STATS: ===== 
+Starters Total Offensive Points: 5
+Starters Total Defensive Points: 5
+
 ================== Player: 6 ====================
-Name: Mon
-Position: C
-Offense pts: 22
-Defense pts: 12
+Name: 1
+Position: 1
+Offense pts: 1
+Defense pts: 1
 sub
 ================== Player: 7 ====================
-Name: Kilo
-Position: D
-Offense pts: 44
-Defense pts: 32
+Name: 1
+Position: 11
+Offense pts: 1
+Defense pts: 1
 sub
 ================== Player: 8 ====================
-Name: Pon
-Position: S
-Offense pts: 12
-Defense pts: 32
+Name: 1
+Position: 1
+Offense pts: 1
+Defense pts: 1
+sub
+================== Player: 1 ====================
+Name: 2
+Position: 2
+Offense pts: 2
+Defense pts: 2
+Starter
+
+===== STATS: ===== 
+Starters Total Offensive Points: 2
+Starters Total Defensive Points: 2
+
+================== Player: 2 ====================
+Name: 2
+Position: 2
+Offense pts: 2
+Defense pts: 2
+Starter
+
+===== STATS: ===== 
+Starters Total Offensive Points: 4
+Starters Total Defensive Points: 4
+
+================== Player: 3 ====================
+Name: 2
+Position: 2
+Offense pts: 2
+Defense pts: 2
+Starter
+
+===== STATS: ===== 
+Starters Total Offensive Points: 6
+Starters Total Defensive Points: 6
+
+================== Player: 4 ====================
+Name: 2
+Position: 2
+Offense pts: 2
+Defense pts: 2
+Starter
+
+===== STATS: ===== 
+Starters Total Offensive Points: 8
+Starters Total Defensive Points: 8
+
+================== Player: 5 ====================
+Name: 2
+Position: 2
+Offense pts: 2
+Defense pts: 2
+Starter
+
+===== STATS: ===== 
+Starters Total Offensive Points: 10
+Starters Total Defensive Points: 10
+
+================== Player: 6 ====================
+Name: 2
+Position: 2
+Offense pts: 2
+Defense pts: 2
+sub
+================== Player: 7 ====================
+Name: 2
+Position: 2
+Offense pts: 2
+Defense pts: 2
+sub
+================== Player: 8 ====================
+Name: 2
+Position: 2
+Offense pts: 2
+Defense pts: 2
+sub
+================== Player: 1 ====================
+Name: 1
+Position: 1
+Offense pts: 1
+Defense pts: 1
+Starter
+
+===== STATS: ===== 
+Starters Total Offensive Points: 1
+Starters Total Defensive Points: 1
+
+================== Player: 2 ====================
+Name: 1
+Position: 1
+Offense pts: 1
+Defense pts: 1
+Starter
+
+===== STATS: ===== 
+Starters Total Offensive Points: 2
+Starters Total Defensive Points: 2
+
+================== Player: 3 ====================
+Name: 1
+Position: 1
+Offense pts: 1
+Defense pts: 1
+Starter
+
+===== STATS: ===== 
+Starters Total Offensive Points: 3
+Starters Total Defensive Points: 3
+
+================== Player: 4 ====================
+Name: 1
+Position: 1
+Offense pts: 1
+Defense pts: 1
+Starter
+
+===== STATS: ===== 
+Starters Total Offensive Points: 4
+Starters Total Defensive Points: 4
+
+================== Player: 5 ====================
+Name: 1
+Position: 1
+Offense pts: 1
+Defense pts: 1
+Starter
+
+===== STATS: ===== 
+Starters Total Offensive Points: 5
+Starters Total Defensive Points: 5
+
+================== Player: 6 ====================
+Name: 1
+Position: 1
+Offense pts: 1
+Defense pts: 1
+sub
+================== Player: 7 ====================
+Name: 1
+Position: 1
+Offense pts: 1
+Defense pts: 1
+sub
+================== Player: 8 ====================
+Name: 1
+Position: 1
+Offense pts: 1
+Defense pts: 1
+sub
+===============GAME 1 COMMENCED=================
+SCORE A: 19
+SCORE B: 2
+
+===============GAME 2 COMMENCED=================
+SCORE A: 9
+SCORE B: 21
+
+===============GAME 3 COMMENCED=================
+SCORE A: 1
+SCORE B: 13
+
+===============GAME 4 COMMENCED=================
+SCORE A: 20
+SCORE B: 11
+
+===============GAME 5 COMMENCED=================
+SCORE A: 17
+SCORE B: 17
+
+Game complete! SCORES IN 5 ROUNDS...
+
+SCORE A: 19,9,1,20,17
+SCORE B: 2,21,13,11,17
+========== END ===========
+
+
+
+===============GAME 1 COMMENCED=================
+SCORE A: 15
+SCORE B: 4
+
+===============GAME 2 COMMENCED=================
+SCORE A: 3
+SCORE B: 2
+
+===============GAME 3 COMMENCED=================
+SCORE A: 2
+SCORE B: 18
+
+===============GAME 4 COMMENCED=================
+SCORE A: 16
+SCORE B: 19
+
+===============GAME 5 COMMENCED=================
+SCORE A: 16
+SCORE B: 4
+
+Game complete! SCORES IN 5 ROUNDS...
+
+SCORE A: 15,3,2,16,16
+SCORE B: 4,2,18,19,4
+========== END ===========
+
+
+
+===============GAME 1 COMMENCED=================
+SCORE A: 2
+SCORE B: 16
+
+===============GAME 2 COMMENCED=================
+SCORE A: 10
+SCORE B: 7
+
+===============GAME 3 COMMENCED=================
+SCORE A: 12
+SCORE B: 9
+
+===============GAME 4 COMMENCED=================
+SCORE A: 16
+SCORE B: 5
+
+===============GAME 5 COMMENCED=================
+SCORE A: 14
+SCORE B: 20
+
+Game complete! SCORES IN 5 ROUNDS...
+
+SCORE A: 2,10,12,16,14
+SCORE B: 16,7,9,5,20
+========== END ===========
+
+
+
+===============GAME 2 COMMENCED=================
+SCORE A: 16
+SCORE B: 12
+
+===============GAME 1 COMMENCED=================
+SCORE A: 16
+SCORE B: 7
+
+===============GAME 3 COMMENCED=================
+SCORE A: 15
+SCORE B: 3
+
+===============GAME 4 COMMENCED=================
+SCORE A: 17
+SCORE B: 3
+
+===============GAME 5 COMMENCED=================
+SCORE A: 8
+SCORE B: 9
+
+Game complete! SCORES IN 5 ROUNDS...
+
+SCORE A: 16,16,15,17,8
+SCORE B: 7,12,3,3,9
+========== END ===========
+
+
+
+===============GAME 1 COMMENCED=================
+SCORE A: 21
+SCORE B: 18
+
+===============GAME 2 COMMENCED=================
+SCORE A: 16
+SCORE B: 20
+
+===============GAME 3 COMMENCED=================
+SCORE A: 18
+SCORE B: 14
+
+===============GAME 4 COMMENCED=================
+SCORE A: 9
+SCORE B: 4
+
+===============GAME 5 COMMENCED=================
+SCORE A: 5
+SCORE B: 19
+
+Game complete! SCORES IN 5 ROUNDS...
+
+SCORE A: 21,16,18,9,5
+SCORE B: 18,20,14,4,19
+========== END ===========
+
+
+
+===============GAME 1 COMMENCED=================
+SCORE A: 16
+SCORE B: 12
+
+===============GAME 2 COMMENCED=================
+SCORE A: 18
+SCORE B: 1
+
+===============GAME 3 COMMENCED=================
+SCORE A: 6
+SCORE B: 10
+
+===============GAME 4 COMMENCED=================
+SCORE A: 8
+SCORE B: 13
+
+===============GAME 5 COMMENCED=================
+SCORE A: 12
+SCORE B: 1
+
+Game complete! SCORES IN 5 ROUNDS...
+
+SCORE A: 16,18,6,8,12
+SCORE B: 12,1,10,13,1
+========== END ===========
+
+
+
+===============GAME 1 COMMENCED=================
+SCORE A: 19
+SCORE B: 9
+
+===============GAME 2 COMMENCED=================
+SCORE A: 20
+SCORE B: 11
+
+===============GAME 4 COMMENCED=================
+SCORE A: 21
+SCORE B: 9
+
+===============GAME 5 COMMENCED=================
+SCORE A: 20
+SCORE B: 14
+
+===============GAME 3 COMMENCED=================
+SCORE A: 19
+SCORE B: 5
+
+Game complete! SCORES IN 5 ROUNDS...
+
+SCORE A: 19,20,19,21,20
+SCORE B: 9,11,5,9,14
+========== END ===========
+
+
